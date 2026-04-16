@@ -12,6 +12,9 @@
 </head>
 <body class="menu-body">
 
+    <!-- BACKGROUND ANIMATIONS -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="bg-interactive"></div>
     <!-- OVERLAY & DRAWER -->
     <div id="overlay" onclick="toggleDrawer()"></div>
     <div id="mobile-drawer">
@@ -35,6 +38,26 @@
     <div class="menu-container" id="dynamic-menu">
         <!-- Content will be injected here by JS -->
     </div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+        <!-- CHATBOT WIDGET -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div class="chat-header">
+            <span><i class="fas fa-robot"></i> Cosmik Assistant</span>
+            <button id="close-chat" class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <!-- Messages injected by JS -->
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type your answer...">
+            <button id="send-chat" class="send-chat"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <button id="chatbot-toggle" class="floating-wa">
+        <i class="fab fa-whatsapp"></i> Book Now
+    </button>
 
     <!-- SCRIPTS -->
     <script src="menu_data.js"></script>

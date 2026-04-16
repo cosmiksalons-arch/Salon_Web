@@ -27,7 +27,7 @@ html {
 
 body {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--black);
     font-family: var(--font-body);
     overflow-x: hidden;
     line-height: 1.6;
@@ -195,7 +195,7 @@ body.menu-body .hamburger-btn {
 }
 
 .drawer-links a {
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
     font-size: 1.2rem;
     font-family: var(--font-heading);
@@ -239,8 +239,7 @@ body.menu-body .hamburger-btn {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    margin-bottom: 150px;
-    /* Increased margin significantly */
+    margin-bottom: 50px;
 }
 
 .hero-title {
@@ -273,9 +272,7 @@ body.menu-body .hamburger-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* keeps everything centered */
     gap: 20px;
-    /* spacing between tagline & button */
 }
 
 .hero-tagline-rotating {
@@ -291,8 +288,8 @@ body.menu-body .hamburger-btn {
     font-weight: bold;
     font-size: 1.5rem;
     box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.45),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        0 8px 30px rgba(0, 0, 0, 0.7),
+        inset 0 1px 0 rgba(0, 0, 0, 0.5);
     font-family: var(--font-body);
     transform: translateY(-2px);
 }
@@ -301,7 +298,7 @@ body.menu-body .hamburger-btn {
     transform: translateY(-4px);
     box-shadow:
         0 14px 45px rgba(0, 0, 0, 0.55),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        inset 0 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 .hero-tagline-rotating::before {
@@ -382,10 +379,9 @@ body.menu-body .hamburger-btn {
 #services,
 #reviews,
 #about {
-    padding: 50px 20px;
-    margin-bottom: 20px;
+    padding: 30px 20px;
+    margin-bottom: 15px;
     text-align: center;
-    /* Large margin to separate sections clearly */
 }
 
 /* Remove margin from the last section so footer sits correctly */
@@ -397,7 +393,7 @@ body.menu-body .hamburger-btn {
 
 .section-title {
     font-size: 2.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: var(--font-heading);
     letter-spacing: 2px;
 }
@@ -447,7 +443,7 @@ body.menu-body .hamburger-btn {
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -528,7 +524,7 @@ body.menu-body .hamburger-btn {
 .menu-page-title {
     font-family: var(--font-heading);
     font-size: 1.4rem;
-    color: var(--white);
+    color: var(--black);
     letter-spacing: 1px;
 }
 
@@ -593,7 +589,7 @@ body.menu-body .hamburger-btn {
 
 .col-price {
     text-align: right;
-    color: #aaa;
+    color: var(--white);
     font-family: var(--font-body);
     font-weight: 500;
     font-size: 1.1rem;
@@ -655,7 +651,7 @@ body.menu-body .hamburger-btn {
     transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 .review-card::before {
@@ -671,7 +667,7 @@ body.menu-body .hamburger-btn {
 
 .review-card:hover {
     border-color: rgba(212, 175, 55, 0.8);
-    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.2), 0 8px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.2), 0 8px 32px rgba(0, 0, 0, 0.08);
     transform: translateY(-8px);
 }
 
@@ -705,7 +701,7 @@ body.menu-body .hamburger-btn {
 
 .reviewer-info h4 {
     margin: 0;
-    color: var(--white);
+    color: var(--black);
     font-size: 1.05rem;
     font-family: var(--font-heading);
     letter-spacing: 1px;
@@ -721,7 +717,7 @@ body.menu-body .hamburger-btn {
 .review-text {
     font-style: italic;
     font-size: 0.95rem;
-    color: #bbb;
+    color: #aaa;
     line-height: 1.7;
     position: relative;
     z-index: 1;
@@ -748,7 +744,7 @@ body.menu-body .hamburger-btn {
     transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 .info-col::before {
@@ -766,7 +762,7 @@ body.menu-body .hamburger-btn {
 .info-col:hover {
     transform: translateY(-15px);
     border-color: rgba(212, 175, 55, 0.8);
-    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.2), 0 8px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.2), 0 8px 32px rgba(0, 0, 0, 0.08);
 }
 
 .location-card {
@@ -886,7 +882,7 @@ footer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
 }
@@ -921,7 +917,7 @@ footer {
 .about-desc-content p {
     font-size: 1.2rem;
     line-height: 1.9;
-    color: #bbb;
+    color: #aaa;
     margin-bottom: 25px;
     font-family: var(--font-body);
     text-align: justify;
@@ -993,4 +989,321 @@ footer {
         line-height: 1.8;
         text-align: left;
     }
+}
+
+/* --- ANIMATIONS: FADE ON SCROLL --- */
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1), transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    will-change: opacity, transform;
+}
+
+.scroll-fade.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- ANIMATIONS: BACKGROUND GLOW ORBS --- */
+.bg-glow {
+    position: fixed;
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+    animation: drift 20s infinite alternate ease-in-out;
+}
+
+.bg-glow-1 {
+    width: 60vw;
+    height: 60vh;
+    background: radial-gradient(circle, rgba(242, 210, 102, 0.15) 0%, transparent 70%);
+    top: -20vh;
+    left: -20vw;
+}
+
+.bg-glow-2 {
+    width: 50vw;
+    height: 50vh;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+    bottom: 10vh;
+    right: -10vw;
+    animation-delay: -7s;
+}
+
+@keyframes drift {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(10vw, 5vh) scale(1.1); }
+    100% { transform: translate(-5vw, -5vh) scale(0.9); }
+}
+
+/* --- ANIMATIONS: INTERACTIVE BACKGROUND GLOW --- */
+.bg-interactive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    margin-top: -400px;
+    margin-left: -400px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+    transform: translate(var(--mouse-x, 400px), var(--mouse-y, 400px));
+    z-index: -2;
+    will-change: transform;
+}
+
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -3; /* Behind interactive glow but above default background */
+    pointer-events: none;
+    opacity: 0.8; /* Subtle transparency so it blends */
+}
+
+
+
+/* --- LOOKBOOK GALLERY --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 350px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+
+/* --- FLOATING WHATSAPP BUTTON --- */
+.floating-wa {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: var(--black);
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    border: 1px solid var(--gold-light);
+}
+
+.floating-wa i {
+    font-size: 1.4rem;
+}
+
+.floating-wa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+}
+
+@media (max-width: 768px) {
+    .floating-wa {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* --- CHATBOT UI --- */
+.chatbot-widget {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 350px;
+    height: 450px;
+    background: rgba(15, 15, 15, 0.95);
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+    z-index: 999;
+    overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    backdrop-filter: blur(15px);
+}
+
+.chatbot-widget.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: var(--black);
+    padding: 15px 20px;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.close-chat {
+    background: transparent;
+    border: none;
+    color: var(--black);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.close-chat:hover {
+    transform: scale(1.1);
+}
+
+.chat-body {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Hide scrollbar for clean look */
+.chat-body::-webkit-scrollbar {
+    width: 5px;
+}
+.chat-body::-webkit-scrollbar-thumb {
+    background: rgba(212, 175, 55, 0.5);
+    border-radius: 10px;
+}
+
+.msg {
+    max-width: 85%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    animation: popIn 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes popIn {
+    from { opacity: 0; transform: translateY(10px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.msg.bot {
+    align-self: flex-start;
+    background: rgba(30, 30, 30, 0.8);
+    color: var(--white);
+    border-bottom-left-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.msg.user {
+    align-self: flex-end;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: var(--black);
+    border-bottom-right-radius: 2px;
+    font-weight: 500;
+}
+
+.chat-input-area {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    background: rgba(10, 10, 10, 0.8);
+}
+
+.chat-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+}
+
+.chat-input::placeholder {
+    color: #666;
+}
+
+.send-chat {
+    background: transparent;
+    border: none;
+    color: var(--gold);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-left: 10px;
+}
+
+.send-chat:hover {
+    transform: scale(1.1) translateX(2px);
+}
+
+.bot-action-btn {
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: var(--black);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.bot-action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Floating WA Button acts as Toggle now */
+#chatbot-toggle {
+    cursor: pointer;
 }

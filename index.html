@@ -17,6 +17,12 @@
 
 <body>
 
+    <!-- BACKGROUND ANIMATIONS -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-interactive"></div>
+
     <!-- OVERLAY FOR DRAWER -->
     <div id="overlay" onclick="toggleDrawer()"></div>
 
@@ -67,7 +73,7 @@
     <div class="main-wrapper">
 
         <!-- SERVICES SELECTION -->
-        <section id="services">
+        <section id="services" class="scroll-fade">
             <h2 class="section-title">Select Service</h2>
             <div class="cards-container">
                 <!-- Men's Card -->
@@ -90,158 +96,167 @@
             </div>
         </section>
 
-        <!-- REVIEWS SECTION -->
-        <section id="reviews">
-            <h2 class="section-title">Client Stories</h2>
-            <div class="reviews-scroller">
-                    <div class="review-card">
-                        <div class="reviewer-info">
-                            <div class="avatar">AK</div>
-                            <div>
-                                <h4>Arjun K.</h4>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="review-text">"The best fade I've got in years. The VIP service is genuinely worth it.
-                            The ambiance is top notch."</p>
-                    </div>
-                    <div class="review-card">
-                        <div class="reviewer-info">
-                            <div class="avatar">SM</div>
-                            <div>
-                                <h4>Sneha M.</h4>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star-half-alt"></i></div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Absolutely loved the Keratin treatment. The staff is professional and
-                            the gold theme is stunning."</p>
-                    </div>
-                    <div class="review-card">
-                        <div class="reviewer-info">
-                            <div class="avatar">RJ</div>
-                            <div>
-                                <h4>Rahul J.</h4>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Very relaxing head massage. The location is easy to find and the team is
-                            very polite."</p>
-                    </div>
-                    <div class="review-card">
-                        <div class="reviewer-info">
-                            <div class="avatar">PV</div>
-                            <div>
-                                <h4>Priya V.</h4>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Outstanding bridal makeup and styling. The team made me feel like a
-                            princess on my special day. Highly recommended!"</p>
-                    </div>
-                    <div class="review-card">
-                        <div class="reviewer-info">
-                            <div class="avatar">VK</div>
-                            <div>
-                                <h4>Vikram K.</h4>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star-half-alt"></i></div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Incredible attention to detail with every service. The VIP experience is
-                            absolutely worth the premium. Will definitely return!"</p>
-                    </div>
-                </div>
-
-        <!-- FOOTER / ABOUT -->
-        <section id="about">
-            <h2 class="section-title">Visit Us</h2>
-            <div class="about-grid">
-                <div class="info-col">
-                    <h4>CONTACT</h4>
-                    <p><a href="tel:+918008772844"><i class="fas fa-phone-alt"></i> +91 80087 72844</a></p>
-                    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=cosmiksalons@gmail.com" target="_blank"><i
-                                class="fas fa-envelope"></i> cosmiksalons@gmail.com</a></p>
-                </div>
-                <div class="info-col location-card"
-                    onclick="window.open('https://maps.app.goo.gl/4awvLSXhVJ8nN7HR6', '_blank')">
-                    <h4>LOCATION</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Kista, Krishna Reddy Pet Rd, Raghavendra Colony,<br>
-                        Hyderabad, Telangana 502319</p>
-
-
-
-                </div>
-
-
-                <div class="info-col">
-                    <h4>HOURS</h4>
-                    <p>Mon - Sat: 9:00 AM - 9:00 PM</p>
-                    <p>Sun: 8:00 AM - 10:00 PM</p>
-                </div>
-            </div>
-
-            <!-- ABOUT DESCRIPTION -->
-            <div class="about-description-container">
-                <h2 class="about-desc-title">About COSMIK</h2>
-                <div class="about-desc-content">
-                    <p>COSMIK is a premium salon dedicated to precision, quality, and contemporary styling. We offer expertly delivered hair, skin, and grooming services tailored to suit individual personalities and lifestyles.</p>
-                    <p>Our team of trained professionals combines refined techniques with modern trends to ensure consistent, high-quality results. Every service is carried out using premium products, advanced equipment, and strict hygiene standards.</p>
-                    <p>We believe grooming is an essential part of confidence and self-presentation. Our focus is to deliver a seamless experience that leaves every client looking sharp, refreshed, and assured.</p>
-                </div>
+        <!-- LOOKBOOK GALLERY -->
+        <section id="lookbook" class="scroll-fade">
+            <h2 class="section-title">The Cosmik Look</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80"
+                        alt="Salon Interior"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80"
+                        alt="Fade Haircut"></div>
+                <div class="gallery-item"><img src="assets/women.jpeg" alt="Hair Styling"></div>
             </div>
         </section>
 
-        <footer>
-            <p>&copy; 2025 COSMIK Unisex Salon. Designed for Premium Care.</p>
-        </footer>
+        <!-- REVIEWS SECTION -->
+        <section id="reviews" class="scroll-fade">
+            <h2 class="section-title">Client Stories</h2>
+            <div class="reviews-scroller">
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="avatar">AK</div>
+                        <div>
+                            <h4>Arjun K.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The best fade I've got in years. The VIP service is genuinely worth it.
+                        The ambiance is top notch."</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="avatar">SM</div>
+                        <div>
+                            <h4>Sneha M.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star-half-alt"></i></div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Absolutely loved the Keratin treatment. The staff is professional and
+                        the gold theme is stunning."</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="avatar">RJ</div>
+                        <div>
+                            <h4>Rahul J.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Very relaxing head massage. The location is easy to find and the team is
+                        very polite."</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="avatar">PV</div>
+                        <div>
+                            <h4>Priya V.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Outstanding bridal makeup and styling. The team made me feel like a
+                        princess on my special day. Highly recommended!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <div class="avatar">VK</div>
+                        <div>
+                            <h4>Vikram K.</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star-half-alt"></i></div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Incredible attention to detail with every service. The VIP experience is
+                        absolutely worth the premium. Will definitely return!"</p>
+                </div>
+            </div>
+
+            <!-- FOOTER / ABOUT -->
+            <section id="about" class="scroll-fade">
+                <h2 class="section-title">Visit Us</h2>
+                <div class="about-grid">
+                    <div class="info-col">
+                        <h4>CONTACT</h4>
+                        <p><a href="tel:+918008772844"><i class="fas fa-phone-alt"></i> +91 80087 72844</a></p>
+                        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=cosmiksalons@gmail.com"
+                                target="_blank"><i class="fas fa-envelope"></i> cosmiksalons@gmail.com</a></p>
+                    </div>
+                    <div class="info-col location-card">
+                        <h4>LOCATION</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Kista, Krishna Reddy Pet Rd, Raghavendra Colony,<br>
+                            Hyderabad, Telangana 502319</p>
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Cosmik+Unisex+Salon,+17.5441264,78.2972126&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="150" 
+                            style="border:1px solid rgba(212, 175, 55, 0.3); border-radius: 8px; margin-top: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+
+                    <div class="info-col">
+                        <h4>HOURS</h4>
+                        <p>Mon - Sat: 9:00 AM - 9:00 PM</p>
+                        <p>Sun: 8:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- ABOUT DESCRIPTION -->
+                <div class="about-description-container">
+                    <h2 class="about-desc-title">About Cosmik</h2>
+                    <div class="about-desc-content">
+                        <p>COSMIK is a premium salon dedicated to precision, quality, and contemporary styling. We offer
+                            expertly delivered hair, skin, and grooming services tailored to suit individual
+                            personalities and lifestyles.</p>
+                        <p>Our team of trained professionals combines refined techniques with modern trends to ensure
+                            consistent, high-quality results. Every service is carried out using premium products,
+                            advanced equipment, and strict hygiene standards.</p>
+                        <p>We believe grooming is an essential part of confidence and self-presentation. Our focus is to
+                            deliver a seamless experience that leaves every client looking sharp, refreshed, and
+                            assured.</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2025 Cosmik Unisex Salon. Designed for Premium Care.</p>
+            </footer>
     </div>
 
+    <!-- FLOATING WHATSAPP BUTTON -->
+        <!-- CHATBOT WIDGET -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div class="chat-header">
+            <span><i class="fas fa-robot"></i> Cosmik Assistant</span>
+            <button id="close-chat" class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <!-- Messages injected by JS -->
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type your answer...">
+            <button id="send-chat" class="send-chat"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <button id="chatbot-toggle" class="floating-wa">
+        <i class="fab fa-whatsapp"></i> Book Now
+    </button>
+
     <script src="script.js"></script>
-    <script>
-        // Smooth scroll with custom speed
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    const targetPosition = targetElement.offsetTop - 100;
-                    const startPosition = window.scrollY;
-                    const distance = targetPosition - startPosition;
-                    const duration = 1500; // 1.5 seconds for slow scroll
-                    let start = null;
-
-                    window.requestAnimationFrame(function animate(timestamp) {
-                        if (start === null) start = timestamp;
-                        const progress = timestamp - start;
-                        const percentage = Math.min(progress / duration, 1);
-
-                        // Easing function for smooth acceleration/deceleration
-                        const easeInOutCubic = percentage < 0.5
-                            ? 4 * percentage * percentage * percentage
-                            : 1 - Math.pow(-2 * percentage + 2, 3) / 2;
-
-                        window.scrollTo(0, startPosition + distance * easeInOutCubic);
-
-                        if (progress < duration) {
-                            window.requestAnimationFrame(animate);
-                        }
-                    });
-                }
-            });
-        });
-    </script>
-
 </body>
 
 </html>
